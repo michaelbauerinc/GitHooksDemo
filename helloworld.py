@@ -8,7 +8,3 @@ def hello_world():
         "Hello": "World",
     }
     print(hello_dict)
-
-
-hello_world()
-print("done")
