@@ -8,3 +8,9 @@ def hello_world():
         "Hello": "World",
     }
     print(hello_dict)
+
+
+import sys
+
+print("working")
+print(sys.executable)

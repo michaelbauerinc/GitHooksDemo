@@ -1,5 +1,14 @@
 repos:
 -   repo: https://github.com/psf/black
-    rev: 19.3b0
+    rev: 19.10b0
     hooks:
     -   id: black
+-   repo: local
+    hooks:
+    -   id: autoupdate
+        name: autoupdate
+        description: "Autoupdates packages in .pre-commit-config.yaml"
+        entry: pre-commit autoupdate
+        language: system
+        pass_filenames: false
+        stages: [commit]
